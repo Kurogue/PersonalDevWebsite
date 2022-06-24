@@ -1,21 +1,29 @@
-/* You can add custom CSS and extend Boostrap styles in this file.  Remember, Bootstrap is just CSS at the end of the day! */
+/* 
+You can add custom CSS and extend Boostrap styles in this file.  Remember, Bootstrap is just CSS at the end of the day! 
+*/
+
+/* This sets the background of the entire website to a dark gray */
 html body{
     background: #444444;
 }
 
+/* This is so the navbar is fixed to the top of the screen and spans the entire screen width */
 .navbar{
     position: fixed;
     width: 100%; 
 }
 
+/* This sets the navbar elements, excluding the house icon, to the left side of the screen */
 .navbar-nav{
     margin-left: auto;
 }
 
+/* This puts all the text of the hero section in the center of screen */
 #hero-section{
     text-align: center;
 }
 
+/* This is for the hero image and it sets the width and height to 100% of the screen and also sets it to cover the entire screen and center. It is fixed so that it has a paralax effect. The z-index is set to -1 so all the other HTML elements sit on top of it. */
 .heroImg{
     background-image: url(img/Circuit.jpg);
     background-position: center;
@@ -31,6 +39,7 @@ html body{
     padding-top: 20vh;
 }
 
+/* This is for the hero section for your name and catch phrase. The text has the font family of Ubuntu and a text shadow to improve readability along with the text being centered horizontally and vertically. */
 .overlay{
     text-align: center;
     color: white;
@@ -45,8 +54,9 @@ html body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* This is for the profile picture, adding a white round border around it and centering the image in and to cover the entire space. The image is horizontally centered using margins. */
 .profilePic{
-    background-image: url(img/ProfPhoto.jpg);
+    background-image: url(img/pfpPic.jpg);
     border-radius: 50%;
     background-position: center;
     background-size: cover;
@@ -62,6 +72,7 @@ html body{
     padding-top: 30px;
 }
 
+/* The carousel is scaled down so that images can be clearly veiwed and the comments for it are also seen. The margins are set for auto so it is centered on the screen. The images are set to cover to allow for the image to be centered */
 .carousel{
     width: 50%;
     height: 50%;
@@ -70,11 +81,13 @@ html body{
     object-fit: cover;
 }
 
+/* Adds as a black transparent background to the comments for readabilty against the images. */
 .carousel-caption{
     background: rgba(0,0,0,0.5);
     padding: 2px 1px 1px 1px;
 }
 
+/* The image for the mission section takes up 100% of the width of the contaienr and has a margin for when it is in a column. */
 .mission-img{
     width: 100%;
     margin-bottom: 20px;
@@ -85,22 +98,25 @@ html body{
     height: 20vh;
 }
 
+/* The icons have a view port font size of 10 for when in a column since it shows up clearly. */
 .icon-c{
     font-size: 10vh;
     color: white;
 }
 
+/* This allows for the footer to have a width of the entire screen length with padding for the text inside to not look cramped. */
 .footer{
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
+/* When the footer takes up the entire width the background is not the same as the bootstrap one so this is to compensate for it. */
 #footer-section{
     background: #212529;
 }
 
-/* SIZZLE */
+/* This sets the color of the text as a nice gray for high contrast. The font is set to Noto Sans for readability. The headers have Avro for their text family with a text shadow to have them stand apart from the regular text. */
 p{
     color: #ededed;
     font-family: 'Noto Sans', sans-serif;
@@ -109,8 +125,10 @@ p{
 h1{
     font-family: 'Arvo', serif;
     color: #EDEDED;
+    text-shadow: 2px 2px 4px black;
 }
 
+/* This is for the targeting of the navbar so it can select just above the section instead of selecting the title of the selection and having the navbar cover it up. */
 #mission-target, 
 #skills-target, 
 #inspiration-target,
